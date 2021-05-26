@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drawepp</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="toolbox">
+        <span>Size <b id="actualSize"></b>px</span>
+
+        <button id="decreaseButton">-</button>
+        <button id="increaseButton">+</button>
+
+        <label for="fillColor">fill?<input type="checkbox" name="fillColor" id="fillColor">
+        </label>
+        <input id="colorPicker" value="#ff0000" type="color">
+    </div>
+
+    <p>
+        Use the tools to change the circle<br>
+        Spacebar to clean the canvas<br>
+        "s" to save the image<br>
+        "f" to toggle fill<br>
+    </p>
+
+    <canvas width="500" height="500" id="canvas"></canvas>
+</body>
+</html>
