@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 5rem;
+    text-align: center;
+    transition: background 0.2s linear, color 0.2s linear;
+}
+body.dark {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body > h1 {
+    margin-bottom: 1.5rem;
+}
+
+.mode-controls {
+    display: flex;
+    position: fixed;
+    right: 2rem;
+    top: 1.5rem;
+}
+.mode-controls > input {
+    visibility: hidden;
+}
+.mode-controls > label {
+    cursor: pointer;
+    user-select: none;
+}
