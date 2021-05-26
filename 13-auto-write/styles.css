@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    align-items: center;
+    background-color: rebeccapurple;
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    min-height: 100vh;
+}
