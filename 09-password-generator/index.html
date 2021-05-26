@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passgen</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1 class="title">passgen</h1>
+
+    <div class="pw-container">
+        <div class="pw-header">
+            <div id="pw" class="pw">
+                <span id="result">check something and run</span>
+                <button>copy</button>
+            </div>
+        </div>
+
+        <form id="passgenForm" class="pw-body">
+            <div class="form-control">
+                <label for="passwordLength">password length</label>
+                <input value="20" min="16" max="64" type="number" name="passwordLength" id="passwordLength">
+            </div>
+            <div class="form-control">
+                <label for="upperCase">include uppercase letters?</label>
+                <input checked type="checkbox" name="upperCase" id="upperCase">
+            </div>
+            <div class="form-control">
+                <label for="lowerCase">include lowercase letters?</label>
+                <input checked type="checkbox" name="lowerCase" id="lowerCase">
+            </div>
+            <div class="form-control">
+                <label for="number">include numbers?</label>
+                <input checked type="checkbox" name="number" id="number">
+            </div>
+            <div class="form-control">
+                <label for="symbol">include special symbols?</label>
+                <input type="checkbox" name="symbol" id="symbol">
+            </div>
+
+            <button class="pw-generate" id="generatePassword">passgen</button>
+        </form>
+
+        <p class="pw-disclaimer">
+            letter 'ñ' is included<br>
+            just because i'm native spanish speaker
+        </p>
+    </div>
+
+    <p class="run-time" id="runTime"></p>
+</body>
+</html>
