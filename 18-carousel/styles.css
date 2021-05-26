@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.carousel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 500px;
+    overflow: hidden;
+    width: 500px;
+}
+
+.image-container {
+    display: flex;
+    transition: transform 0.3s linear;
+    transform: translateX(0);
+}
+
+.image-container > img {
+    height: 500px;
+    object-fit: cover;
+    width: 500px;
+}
