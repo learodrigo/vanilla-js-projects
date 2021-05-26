@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    align-items: center;
+    background: #202057;
+    background-image: -webkit-linear-gradient(125deg, #29124e 0%, #202057 100%);
+    background-image: linear-gradient(125deg, #29124e 0%, #202057 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.form {
+    margin: 3rem;
+}
+
+.form__input {
+    background-color: #10103a;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    color: #eee;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 1rem 2rem;
+}
+.form__input:focus {
+    background-color: #010120;
+}
+
+.card {
+    background: #2E2A68;
+    border-radius: 16px;
+    box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.1);
+    margin: 3rem;
+    max-width: 800px;
+    padding: 3rem;
+    width: 100%;
+}
+.card > header {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.avatar {
+    border: 15px solid #202057;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.card__info-holder {
+    color: #ddd;
+    margin-left: 2rem;
+    width: 100%;
+}
+
+.info__name {
+    margin-bottom: 1rem;
+}
+
+.info__bio {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.info__link {
+    color: inherit;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: normal;
+    text-decoration: none;
+}
+.info__link:hover {
+    text-decoration: line-through;
+}
+
+.holder__info {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-bottom: 3rem;
+    width: 80%;
+}
+
+.holder__info > li {
+    font-size: 1.2rem;
+}
+
+.holder__info > li > strong {
+    display: block;
+    font-size: 0.9rem;
+}
+
+.repos__title {
+    margin-bottom: 1rem;
+}
+
+.holder__repos {
+    list-style-type: none;
+}
+
+.card > h3 {
+    color: #eee;
+    font-size: 1.3rem;
+}
+
+.repo {
+    background-color: #202057;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 0.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+.repo > a {
+    color: #eee;
+    font-size: 1.3rem;
+}
+.repo > a:hover {
+    text-decoration: line-through;
+}
