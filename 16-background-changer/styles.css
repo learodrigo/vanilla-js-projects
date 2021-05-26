@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button {
+    background-color: #222;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.3rem;
+    outline: none;
+    padding: 1rem;
+}
+button:active {
+    transform: translate(1px, 1px);
+}
