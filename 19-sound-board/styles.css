@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: monospace;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.player {
+    background-color: rebeccapurple;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    border: none;
+    margin: 0.5rem;
+    outline: none;
+    padding: 1rem 1.3rem;
+}
+.player:active {
+    transform: translate(1px, 1px);
+}
